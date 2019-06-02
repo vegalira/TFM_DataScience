@@ -9,7 +9,7 @@ library(xlsx)
 
 
 
-historico_madrid <- read_xlsx("Historico_Madrid_anonimizado.xlsx")
+historico_madrid <- read_xlsx("C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\01_data\\Historico_Madrid_anonimizado.xlsx")
 #install.packages("sqldf")
 #library(sqldf)
 
@@ -79,7 +79,7 @@ table(hist_mad_limpio$air_conditioning)
 sum(is.na(hist_mad_limpio$air_conditioning))#no hay missing values. No necesita acción.
 
 table(hist_mad_limpio$construction_year)
-sum(is.na(hist_mad_limpio$construction_year))#hay missing values pero no requiere acción. Es dato incompleto
+sum(is.na(hist_mad_limpio$construction_year))#hay missing values. Es dato incompleto. Los eliminamos
 #se aprecian errores (años de construcción muy bajos) pero de momento no vamos a modificarlos
 
 table(hist_mad_limpio$exterior)
@@ -139,9 +139,16 @@ hist_mad_limpio$status = car::recode(hist_mad_limpio$status,"'Bad'=1; 'Normal'=2
 table(hist_mad_limpio$status)
 sum(is.na(hist_mad_limpio$status))
 
+#2.2.6 Construction_year. Convertimos los missing values en 0
 
 
-write.csv(hist_mad_limpio, file = "historico_madrid_limpio.csv")
+hist_mad_limpio$construction_year = car::recode(hist_mad_limpio$construction_year,"NA=0" )
+
+sum(is.na(hist_mad_limpio$construction_year))
+
+table(hist_mad_limpio$construction_year)
+
+write.csv(hist_mad_limpio, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\historico_madrid_limpio.csv")
 
   
   

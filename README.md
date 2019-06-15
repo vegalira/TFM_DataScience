@@ -1,5 +1,6 @@
 # TFM_DataScience
 # Impacto del ciclo inmobiliario en el precio de la vivienda. Distritos de Madrid
+## Lorena Vega Romero
 
 La idea inicial de este proyecto era evaluar el impacto de las variables macroeconómicas en el precio de la vivienda en los distritos de Madrid.
 
@@ -148,24 +149,23 @@ He agruado la información a nivel mensual para facilitar la predicción y para 
 
 A modo de ejemplo podemos ver una visualización de la predicción arrojada para el distrito 01_Centro:
 
-Imagen1. Representación de los datos
+### Imagen1. Representación de los datos
 
 ![](https://github.com/vegalira/masterdatascience/blob/master/distrito_1_1.png)
 
 Podemos observar que hay mucha dispersión en los mismos y eso entiendo va a dificultar la previsión.
 
-Imagen2. Representación visual de la predicción.
+### Imagen2. Representación visual de la predicción.
 
 ![](https://github.com/vegalira/masterdatascience/blob/master/distrito_1_2.png)
 
 Aunque observamos que hay mucha dispersión con respecto a la predicción, si analizamos la línea de predicción en 2019, 2020 y 2021 vemos que se ajusta bastante bien y que sigue en la misma proporción.
 
-Imagen3. Imagen de gráfico interactivo 
+### Imagen3. Imagen de gráfico interactivo 
 
 ![](https://github.com/vegalira/masterdatascience/blob/master/distrito_1_3.png)
 
-He unificado las predicciones de todos los distritos para el 2019 y 2020 en el excel ``` Distritos_madrid_Tableau ``` ubicado en carpeta 
-``` 00_Data ``` junto con las medias de los unitarios a nivel distrito para el 2018 para poder visualizarlo en Tableau.
+He unificado las predicciones de todos los distritos para el 2019 y 2020 en el excel ``` Distritos_madrid_Tableau.xlsx ``` ubicado en carpeta ``` 00_Data ``` junto con las medias de los unitarios a nivel distrito para el 2018 para poder visualizarlo en Tableau.
 Además se han incluido en dicho archivo, el valor máximo alcanzado para cada distrito (indicando el año) y la variación del valor actual o predecido con respecto al máximo.
 
 Lo que queremos es comprobar si efectivamente estamos a niveles de máximo (burbuja inmobiliaria) o, si por el contrario, estamos alejados aún.
@@ -173,28 +173,77 @@ Lo que queremos es comprobar si efectivamente estamos a niveles de máximo (burb
 
 ## Visualización en Tableau
 
+Para la visualización en Tableau necesitaremos los siguientes ficheros:
 
+``` Distritos_madrid_Tableau.xlsx ```  y ``` Evolucion_precios_distritos.xlsx ``` ubicado en carpeta ``` 00_Data ```
 
 De la observación de los datos analizamos lo siguiente:
 
-### 4.1 ¿Qué distritos verán incrementados sus precios?
+## ¿Qué distritos verán incrementados sus precios?
 
-### 4.2 ¿Estamos cerca de precios de burbuja inmobiliaria?
+Analizando la diferencia entre el valor arrojado en el 2018 para cada distrito y la predicción para el 2019 vemos lo siguiente:
+
+![]( https://github.com/vegalira/masterdatascience/blob/master/Var_distritos.png)
+
+Como vemos, todos aumentan en un grado medio en la mayor parte de los distritos y en grado máximo en distritos como Villaverde, Puente de Vallecas, Carabanchel y Vicálvaro.
+
+Sólo ve su precio disminuido el distrito de Barajas.
+
+Podríamos pensar que la predicción es errónea, y en cierto modo lo es, en los distritos donde incrementa tanto. Pero, aunque no explica un crecimiento tan exponencial, y la realidad del mercado no es tal, es cierto que sí refleja lo que está sucediendo actualmente.
+
+El mercado se encuentra saturado en los distritos más céntricos y más caros tradicionalmente. Esta está provocando un fenómeno de deslocalización hacia distritos e incluso municipios colindantes, provocando un aumento exponencial en los precios de vivienda en estas localizaciones.
+
+Si hacemos el mismo análisis entre 2020-2019
+
+![]( https://github.com/vegalira/masterdatascience/blob/master/Var_distritos%202020.png)
+
+En este caso ninguno decrece, todos tienen variación positiva y vuelven a repetir en el ranking Villaverde, Puente de Vallecas, Carabanchel y Vicálvaro.
+
+En este caso la predicción parece ser errónea (o eso espero). Un crecimiento de más del 15% de un año para otro no es lo habitual. Si es que estas predicciones se cumplen, todo parece indicar que los precios van a continuar en ascenso pero, previsiblemente, se tendrán que poner en marcha mecanismos de control que consigan regular el mercado o quizá volvamos a sufrir un brusco descenso de los precios que lo equilibren.
+
+No obstante, es cierto que de nuevo como hemos indicado los distritos donde más crecen son los que tienen los precios más bajos y tienen mayor recorrido así que quizá aunque no exacta no sea tan descabellada esa predicción.
 
 
-Inicalmente las predicciones me parecía demasiado optimistas. Todos los   
+![]( https://github.com/vegalira/masterdatascience/blob/master/distritos_2018.png)
 
 
- ### CONCLUSIONES PASO 4: 
+## ¿Estamos cerca de precios de burbuja inmobiliaria?
+
+Inicalmente las predicciones me parecía demasiado optimistas. Como hemos visto antes todos los distritos menos uno en 2019 crecen en precios.
+
+Mi impresión inicial, por mi conocimiento del mercado y porque la percepción generalizada es que los precios están demasiado elevados, era que lo óptimo es que las predicciones indicaran un ajuste en los precios. 
+
+Por ello, decidí analizar como se encuentran los precios en comparación con el precio máximo (normalmente 2007-2008) de la serie histórica de precios de vivienda.
+
+En esta imagen podemos ver que la mayor parte de los distritos se encuentra por debajo de los valores máximos alcanzados. Gran parte de ellos muy alejados aún de los precios de 2007-2008 (-24/-35%). 
+
+Precisamente los distritos más populares y céntricos están por debajo pero a niveles cercanos y, muy destacable y evidente por otro lado en los distritos de Chamberí y Salamanca que ya sobrepasan los máximos históricos.
+
+
+![]( https://github.com/vegalira/masterdatascience/blob/master/2019-Max%20.png)
+
+
+Si vemos como evolucionaría en 2020 los distritos que estaban próximos a los niveles máximos, ya los superan. Es el caso de Moncloa y Centro. Se mantienen Chamberí y Salamanca y, en general, hay una tendencia alcista como habíamos mencionado.
+
+![]( https://github.com/vegalira/masterdatascience/blob/master/2020-Max.png)
+
+
+Esos distritos que tenían unos crecimientos exponenciales en las predicciones de 2019 y 2020 son los que se encuentran aun muy alejados de valores de 2007-2008.
+
+![]( https://github.com/vegalira/masterdatascience/blob/master/Dashboard%201.png)
+
+
+ ## CONCLUSIONES
   
-  * 
+ Las predicciones, aunque no exactas por supuesto, reflejan el comportamiento actual del mercado inmobiliario.
+ 
+Tanto la situación actual como las predicciones objeto de este estudio nos indican que de forma general no estamos en niveles de 2007-2008. No obstante, tal y como refleja este análisis, en determinados distritos de sí saltan las alarmas. Hablamos de los distritos más céntricos y más demandados.
+ 
+Tal y como hemos observado el aumento de los precios se desplaza hacia distritos menos céntricos y menos populares que pueden absorber la demanda creciente tanto en volumen como en precios.
 
-
-
-
-
-
-
+Tendremos que esperar para ver cómo se comporta el mercado finalmente y si se adoptan medidas para impedir este signo alcista de precios que, al margen de otras consideraciones, ya está a niveles preocupantes en cuanto a esfuerzo teórico de las familias.
+ 
+ 
 
 
 
@@ -205,7 +254,12 @@ Inicalmente las predicciones me parecía demasiado optimistas. Todos los
 ## BIBLIOGRAFÍA
 
 PROPHET: https://facebook.github.io/prophet/
-
+R: http://rpubs.com/
+STACKOVERFLOW: https://es.stackoverflow.com/
+R y Python: https://www.datascience.com/
+.
+.
+.
 
 
 

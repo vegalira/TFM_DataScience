@@ -151,19 +151,19 @@ A modo de ejemplo podemos ver una visualización de la predicción arrojada para
 
 ### Imagen1. Representación de los datos
 
-![](https://github.com/vegalira/masterdatascience/blob/master/distrito_1_1.png)
+![](distrito_1_1.png)
 
 Podemos observar que hay mucha dispersión en los mismos y eso entiendo va a dificultar la previsión.
 
 ### Imagen2. Representación visual de la predicción.
 
-![](https://github.com/vegalira/masterdatascience/blob/master/distrito_1_2.png)
+![](distrito_1_2.png)
 
 Aunque observamos que hay mucha dispersión con respecto a la predicción, si analizamos la línea de predicción en 2019, 2020 y 2021 vemos que se ajusta bastante bien y que sigue en la misma proporción.
 
 ### Imagen3. Imagen de gráfico interactivo 
 
-![](https://github.com/vegalira/masterdatascience/blob/master/distrito_1_3.png)
+![](distrito_1_3.png)
 
 He unificado las predicciones de todos los distritos para el 2019 y 2020 en el excel ``` Distritos_madrid_Tableau.xlsx ``` ubicado en carpeta ``` 00_Data ``` junto con las medias de los unitarios a nivel distrito para el 2018 para poder visualizarlo en Tableau.
 Además se han incluido en dicho archivo, el valor máximo alcanzado para cada distrito (indicando el año) y la variación del valor actual o predecido con respecto al máximo.
@@ -183,7 +183,7 @@ De la observación de los datos analizamos lo siguiente:
 
 Analizando la diferencia entre el valor arrojado en el 2018 para cada distrito y la predicción para el 2019 vemos lo siguiente:
 
-![]( https://github.com/vegalira/masterdatascience/blob/master/Var_distritos.png)
+![]( Var_distritos.png)
 
 Como vemos, todos aumentan en un grado medio en la mayor parte de los distritos y en grado máximo en distritos como Villaverde, Puente de Vallecas, Carabanchel y Vicálvaro.
 
@@ -195,7 +195,7 @@ El mercado se encuentra saturado en los distritos más céntricos y más caros t
 
 Si hacemos el mismo análisis entre 2020-2019
 
-![]( https://github.com/vegalira/masterdatascience/blob/master/Var_distritos%202020.png)
+![](Var_distritos%202020.png)
 
 En este caso ninguno decrece, todos tienen variación positiva y vuelven a repetir en el ranking Villaverde, Puente de Vallecas, Carabanchel y Vicálvaro.
 
@@ -204,7 +204,7 @@ En este caso la predicción parece ser errónea (o eso espero). Un crecimiento d
 No obstante, es cierto que de nuevo como hemos indicado los distritos donde más crecen son los que tienen los precios más bajos y tienen mayor recorrido así que quizá aunque no exacta no sea tan descabellada esa predicción.
 
 
-![]( https://github.com/vegalira/masterdatascience/blob/master/distritos_2018.png)
+![]( distritos_2018.png)
 
 
 ## ¿Estamos cerca de precios de burbuja inmobiliaria?
@@ -215,22 +215,23 @@ Mi impresión inicial, por mi conocimiento del mercado y porque la percepción g
 
 Por ello, decidí analizar como se encuentran los precios en comparación con el precio máximo (normalmente 2007-2008) de la serie histórica de precios de vivienda.
 
+
 En esta imagen podemos ver que la mayor parte de los distritos se encuentra por debajo de los valores máximos alcanzados. Gran parte de ellos muy alejados aún de los precios de 2007-2008 (-24/-35%). 
 
 Precisamente los distritos más populares y céntricos están por debajo pero a niveles cercanos y, muy destacable y evidente por otro lado en los distritos de Chamberí y Salamanca que ya sobrepasan los máximos históricos.
 
 
-![]( https://github.com/vegalira/masterdatascience/blob/master/2019-Max%20.png)
+![]( 2019-Max%20.png)
 
 
 Si vemos como evolucionaría en 2020 los distritos que estaban próximos a los niveles máximos, ya los superan. Es el caso de Moncloa y Centro. Se mantienen Chamberí y Salamanca y, en general, hay una tendencia alcista como habíamos mencionado.
 
-![]( https://github.com/vegalira/masterdatascience/blob/master/2020-Max.png)
+![]( 2020-Max.png)
 
 
 Esos distritos que tenían unos crecimientos exponenciales en las predicciones de 2019 y 2020 son los que se encuentran aun muy alejados de valores de 2007-2008.
 
-![]( https://github.com/vegalira/masterdatascience/blob/master/Dashboard%201.png)
+![]( Dashboard%201.png)
 
 
  ## CONCLUSIONES

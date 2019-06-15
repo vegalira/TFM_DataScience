@@ -80,6 +80,13 @@ Las tareas efectuadas, de modo general en el fichero ``` Carga_datos_limpieza.R 
 #### Output: 
 El output generado de este código no puede adjuntarse tampoco al repositorio, por lo que se hará llegar a los evaluadores, en prevención de posibles problemas de ejecución del script en el mismo momento que el fichero original.
 
+### Paso 3. Modelo de predicción de precios de vivienda con datos originales
+
+Una vez limpio el fichero con la información histórica de las viviendas procedemos a su análisis y modelado.
+
+Como he comentado anteriormente, se ha realizado con Python en archivo ``` Modelo_macro.ipynb ``` en carpeta ``` 01_Code ``` del repositorio.
+
+
 
 
 

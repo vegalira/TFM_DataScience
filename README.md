@@ -5,7 +5,7 @@ La idea inicial de este proyecto era evaluar el impacto de las variables macroec
 
 Se trataba de intentar ver la influencia de esas variables en el precio y poder predicir si el precio de la vivienda iba a subir o bajar en función de ellas. De esta manera nos podríamos anticipar ante un cambio de tendencia al alza o la baja, con lo que ello supone.
 
-Como más adelante desarrollaré, la falta de datos a nivel distrito hizo que tuviera que predecir dischas variables. Analizando los resultados de estas predicciones concluí que no eran suficientemente relevantes como para poder realizar el estudio. 
+Como más adelante desarrollaré, la falta de datos a nivel distrito hizo que tuviera que predecir dichas variables. Analizando los resultados de estas predicciones concluí que no eran suficientemente relevantes como para poder realizar el estudio. 
 
 Por ello, no se han tenido en cuenta estas variables en el análisis final de los distritos de Madrid pero sí en el modelo de predicción de precios de vivienda. Profundizaremos más adelante en ello.
 
@@ -146,7 +146,34 @@ En este script se genera, por un lado, un fichero con la agrupación por año de
 Se ha generado una predicción para cada uno de los 21 distritos de Madrid para los años 2019, 2020 y 2021. 
 Para obtener el mejor lambda he utilizado la función BoxCox que ha ayudado en la predicción. 
 
-A modo de ejemplo podemos ver 
+A modo de ejemplo podemos ver una visualización de la predicción arrojada para el distrito 01_Centro:
+
+
+
+
+
+
+
+He unificado las predicciones de todos los distritos para el 2019 y 2020 en el excel ``` Distritos_madrid_Tableau ``` ubicado en carpeta 
+``` 00_Data ``` junto con las medias de los unitarios a nivel distrito para el 2018 para poder visualizarlo en Tableau.
+Además se han incluido en dicho archivo, el valor máximo alcanzado para cada distrito (indicando el año) y la variación del valor actual o predecido con respecto al máximo.
+
+Lo que queremos es comprobar si efectivamente estamos a niveles de máximo (burbuja inmobiliaria) o, si por el contrario, estamos alejados aún.
+
+De la observación de los datos analizamos lo siguiente:
+
+### 4.1 ¿Qué distritos verán incrementados sus precios?
+
+### 4.2 ¿Estamos cerca de precios de burbuja inmobiliaria?
+
+
+Inicalmente las predicciones me parecía demasiado optimistas. Todos los   
+
+
+ ### CONCLUSIONES PASO 4: 
+  
+  * 
+
 
 
 

@@ -83,11 +83,47 @@ Las tareas efectuadas, de modo general en el fichero ``` Carga_datos_limpieza.R 
 #### Output: 
 El output generado de este código no puede adjuntarse tampoco al repositorio, por lo que se hará llegar a los evaluadores, en prevención de posibles problemas de ejecución del script en el mismo momento que el fichero original.
 
-### Paso 3. Modelo de predicción de precios de vivienda con datos originales
+### Paso 3. Modelo de predicción de precios de vivienda con datos originales y con variables macro
 
 Una vez limpio el fichero con la información histórica de las viviendas procedemos a su análisis y modelado.
 
-Como he comentado anteriormente, se ha realizado con Python en archivo ``` Modelo_macro.ipynb ``` en carpeta ``` 01_Code ``` del repositorio.
+  ### 3.1 Modelo sin variables macroeconómicas
+
+Como he comentado anteriormente, se ha realizado con Python en archivo ``` Modelo_no_macro.ipynb ``` en carpeta ``` 01_Code ``` del repositorio.
+
+
+INSERTAR AQUI MAS TEXTO
+
+
+
+  ### 3.2 Modelo con variables macroeconómicas
+
+Igual que el anterior, se ha realizado con Python en archivo ``` 03_Modelo_macro.ipynb ``` en carpeta ``` 01_Code ``` del repositorio.
+
+Se utiliza para ello el fichero ``` historico_madrid_limpio.csv ``` que hemos obtenido del script ``` 02_Carga_datos_limpieza.R ```. Se ha hecho llegar una copia a los evaluadores de este fichero(por su importancia) por si existe algún problema en la ejecución del script.
+
+En este script, como complemento del anterior, se ha analizado la incidencia de las variables macroeconómicas en la predicción.
+
+Como se puede observar, de las features seleccionadas anteriormente, solo se han incluido las featuresmacro(renta y compraventas) por su correlación con el precio.
+
+Se ha vuelto a ejecutar el modelo y podemos observar que la predicción mejora. 
+
+Si tenemos en cuenta además que la renta no hemos podido predecirla y que apenas hemos tenido acceso a este nivel geográfico a otras variables podemos deducir el alto grado de implicación que juegan las variables macroeconómicas en la estimación de precios. 
+
+   #### Problemas localizados: 
+
+```
+- Debido a que no existe información a nivel distrito de la mayor parte de variables macroeconómicas tuve que descartar variables y utilizar solo datos desde 2013.
+- Como no disponía de datos de todas las variables macro antes de 2013 he tenido que utilizar solo los datos de precios de 2013 en adelante, con lo que eso supone al modelo.
+```
+  ### CONCLUSIONES PASO 3: 
+  
+  * Las variables macro ayudan en la predicción de precios
+  * Intentaré profundizar, a otros niveles geográficos más amplios, donde se dispone de más información, para ver la incidencia real de las variables macroeconómicas en otro estudio.
+  
+
+
+
 
 
 

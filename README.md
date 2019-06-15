@@ -131,6 +131,13 @@ Si tenemos en cuenta además que la renta no hemos podido predecirla y que apena
   * Intentaré profundizar, a otros niveles geográficos más amplios, donde se dispone de más información, para ver la incidencia real de las variables macroeconómicas en otro estudio.
   
 
+### Paso 4. Predicción a nivel distrito con series temporales
+
+Lo anterior nos da un modelo para predecir el precio de la vivienda, pero lo que realmente quería estudiar en este proyecto era la predicción a nivel distrito y evaluar si efectivamente van a bajar o subir los precios en el corto/medio plazo.
+
+Y comprobar, ya de paso, si es verdad que estamos de nuevo frente a lo que denominan "burbuja inmobiliara" en el mercado de la vivienda en Madrid.
+
+
 
 
 

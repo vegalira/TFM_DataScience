@@ -55,6 +55,7 @@ Una vez realizada la predicción agrupé todas ellas en un fichero pivotado ``` 
 #### Problemas localizados: 
 
 No existe suficiente información retroactiva para una buena predicción y la información no se encuentra actualizada. 
+La variable Renta arroja una predicción, bajo mi punto de vista, erróneo y seguramente sea así porque solo disponemos de información de 3 años, a nivel anual, no son datos suficientes para hacer una estimación correcta, por tanto. Por ello, se ha supuesto para 2016-2019 la renta del 2015. Es práctica habitual en una variable como la de la renta que no se puede actualizar, por su complejidad, de forma más habitual.
 
 #### Output:
 

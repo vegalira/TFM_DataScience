@@ -175,7 +175,7 @@ Lo que queremos es comprobar si efectivamente estamos a niveles de máximo (burb
 
 Para la visualización en Tableau necesitaremos los siguientes ficheros:
 
-``` Distritos_madrid_Tableau.xlsx ```  y ``` Evolucion_precios_distritos.xlsx ``` ubicado en carpeta ``` 00_Data ```
+``` Distritos_madrid_Tableau.xlsx ``` ubicado en carpeta ``` 00_Data ```
 
 De la observación de los datos analizamos lo siguiente:
 

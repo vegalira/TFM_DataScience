@@ -144,7 +144,7 @@ Para la estimación he utilizado R, el script ``` 05_Prophet_distritos ``` se en
 En este script se genera, por un lado, un fichero con la agrupación por año de los datos de 2018 y la media para cada distrito. Se ha generado así para poder visualizarlo en Tableau después y comparar con el año 2019 y 2020 que predecimos en este script.
 
 Se ha generado una predicción para cada uno de los 21 distritos de Madrid para los años 2019, 2020 y 2021. 
-Para obtener el mejor lambda he utilizado la función BoxCox que ha ayudado en la predicción. 
+He agruado la información a nivel mensual para facilitar la predicción y para obtener el mejor lambda he utilizado la función BoxCox que ha ayudado en la predicción. 
 
 A modo de ejemplo podemos ver una visualización de la predicción arrojada para el distrito 01_Centro:
 

@@ -101,7 +101,6 @@ No obstante, estaban haciendo poco interpretable la información y finalmente lo
 
 ```
 - El volumnen de datos de viviendas utilizado no es elevado y puede que no sea suficiente para la predicción de precios. Este es un problema importante al que me enfrento normalmente en mi trabajo puesto que no tenemos quizá el volumen suficiente como para sacar conclusiones veraces de los datos. Y, sobre todo, para poder hacer predicciones lo más ajustadas posible.
--
 ```
 
 
@@ -135,9 +134,35 @@ Si tenemos en cuenta además que la renta no hemos podido predecirla y que apena
 
 Lo anterior nos da un modelo para predecir el precio de la vivienda, pero lo que realmente quería estudiar en este proyecto era la predicción a nivel distrito y evaluar si efectivamente van a bajar o subir los precios en el corto/medio plazo.
 
-Y comprobar, ya de paso, si es verdad que estamos de nuevo frente a lo que denominan "burbuja inmobiliara" en el mercado de la vivienda en Madrid.
+Y comprobar, ya de paso, si es verdad que estamos de nuevo frente a lo que denominan "burbuja inmobiliaria" en el mercado de la vivienda en Madrid.
+
+Inicialmente consideré realizar un ARIMA y de hecho lo hice pero me encontraba con el mismo problema que en las variables macroeconómicas. No tenía una serie temporal con muchos datos a nivel anual (en la mayor parte contaba desde 2003) y si realizaba el estudio a nivel diario o mensual me faltaban muchos datos. Como comprobé ARIMA no funciona demasiado correctamente bajo esas premisas.
+
+Por ello, decidí realizar la predicción de la serie temporal con PROPHET y con los datos diarios, aunque no fueran únicos y no tuviera en todos los casos porque según he leído es robusto frente a la falta de datos, los atípicos y los cambios de tendencia. Pensé que PROPHET se ajustaba perfectamente a mis requerimientos.
+
+Para la estimación he utilizado R, el script ``` 05_Prophet_distritos ``` se encuentra en carpeta ``` 01_Code ``` del repositorio y, necesita para su ejecución el fichero ``` historico_madrid_limpio.csv ``` que hemos obtenido del script ``` 02_Carga_datos_limpieza.R ```
+En este script se genera, por un lado, un fichero con la agrupación por año de los datos de 2018 y la media para cada distrito. Se ha generado así para poder visualizarlo en Tableau después y comparar con el año 2019 y 2020 que predecimos en este script.
+
+Se ha generado una predicción para cada uno de los 21 distritos de Madrid para los años 2019, 2020 y 2021. 
+Para obtener el mejor lambda he utilizado la función BoxCox que ha ayudado en la predicción. 
+
+A modo de ejemplo podemos ver 
 
 
+
+
+
+
+
+
+
+
+
+
+
+## BIBLIOGRAFÍA
+
+PROPHET: https://facebook.github.io/prophet/
 
 
 

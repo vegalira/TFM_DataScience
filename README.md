@@ -89,11 +89,20 @@ Una vez limpio el fichero con la información histórica de las viviendas proced
 
   ### 3.1 Modelo sin variables macroeconómicas
 
-Como he comentado anteriormente, se ha realizado con Python en archivo ``` Modelo_no_macro.ipynb ``` en carpeta ``` 01_Code ``` del repositorio.
+Como he comentado anteriormente, se ha realizado con Python en archivo ``` 04_Modelo_no_macro.ipynb ``` en carpeta ``` 01_Code ``` del repositorio.
 
+Se utiliza para ello el fichero ``` historico_madrid_limpio.csv ``` que hemos obtenido del script ``` 02_Carga_datos_limpieza.R ```. Se ha hecho llegar una copia a los evaluadores de este fichero(por su importancia) por si existe algún problema en la ejecución del script.
 
-INSERTAR AQUI MAS TEXTO
+En este script vamos a analizar los datos, a ver la relación que guardan las variables y hacemos la selección más adecuada de features.
+Se descartan outliers. En un primer momento pensé en dejarlos (una vez eliminados los verdaderos errores) porque en algunas zonas de Madrid es muy común que convivan viviendas muy diferentes y muy dispares en precios. Y, a nivel distrito, es normal que esto suceda.
+No obstante, estaban haciendo poco interpretable la información y finalmente los descarté del perímetro.
 
+  #### Problemas localizados: 
+
+```
+- El volumnen de datos de viviendas utilizado no es elevado y puede que no sea suficiente para la predicción de precios. Este es un problema importante al que me enfrento normalmente en mi trabajo puesto que no tenemos quizá el volumen suficiente como para sacar conclusiones veraces de los datos. Y, sobre todo, para poder hacer predicciones lo más ajustadas posible.
+-
+```
 
 
   ### 3.2 Modelo con variables macroeconómicas

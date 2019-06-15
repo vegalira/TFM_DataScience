@@ -48,6 +48,8 @@ Por tanto, la decisión fue utilizar únicamente como variables macroeconómicas
 
 Como no se disponía de información actualizada en la mayor parte de las variables, decidí predecir las faltantes con ARIMA. Se puede ver el código en el fichero ``` Arima_variables_macro.R ``` en la carpeta ``` 01_Code ``` del repositorio. Las series de las variables analizadas en el script se encuentran en la carpeta ``` 00_Data ```
 
+La única serie que no ha sido necesario predecir es la de Población.
+
 Una vez realizada la predicción agrupé todas ellas en un fichero pivotado ``` variables_macro.xlsx ``` para su posterior uso en el modelo de predicción de precios de vivienda.
 
 #### Problemas localizados: 

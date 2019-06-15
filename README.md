@@ -148,17 +148,32 @@ He agruado la información a nivel mensual para facilitar la predicción y para 
 
 A modo de ejemplo podemos ver una visualización de la predicción arrojada para el distrito 01_Centro:
 
+Imagen1. Representación de los datos
 
+![](https://github.com/vegalira/masterdatascience/blob/master/distrito_1_1.png)
 
+Podemos observar que hay mucha dispersión en los mismos y eso entiendo va a dificultar la previsión.
 
+Imagen2. Representación visual de la predicción.
 
+![](https://github.com/vegalira/masterdatascience/blob/master/distrito_1_2.png)
 
+Aunque observamos que hay mucha dispersión con respecto a la predicción, si analizamos la línea de predicción en 2019, 2020 y 2021 vemos que se ajusta bastante bien y que sigue en la misma proporción.
+
+Imagen3. Imagen de gráfico interactivo 
+
+![](https://github.com/vegalira/masterdatascience/blob/master/distrito_1_3.png)
 
 He unificado las predicciones de todos los distritos para el 2019 y 2020 en el excel ``` Distritos_madrid_Tableau ``` ubicado en carpeta 
 ``` 00_Data ``` junto con las medias de los unitarios a nivel distrito para el 2018 para poder visualizarlo en Tableau.
 Además se han incluido en dicho archivo, el valor máximo alcanzado para cada distrito (indicando el año) y la variación del valor actual o predecido con respecto al máximo.
 
 Lo que queremos es comprobar si efectivamente estamos a niveles de máximo (burbuja inmobiliaria) o, si por el contrario, estamos alejados aún.
+
+
+## Visualización en Tableau
+
+
 
 De la observación de los datos analizamos lo siguiente:
 

@@ -12,7 +12,7 @@ library(forecast)
 
 #cargamos la serie temporal extraida del Ayuntamiento de Madrid
 
-renta <- read_xlsx("C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\01_data\\Serie_temporal_Renta_Distritos_Ayto.xlsx")
+renta <- read_xlsx("..\\01_data\\Serie_temporal_Renta_Distritos_Ayto.xlsx")
 renta_tib <- as_tibble(renta)
 
 cabeceras <- names(renta_tib)
@@ -36,8 +36,8 @@ for (i in 3:length(cabeceras)){
   prediccion = forecast(fitARIMA, h=5)
   #print(prediccion)
   #plot(forecast(fitARIMA, h=5), incluide=150)
-  write.table(cabeceras[i], file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\02_predicciones_macro\\prediccion_renta.xls", append=TRUE)
-  write.table(prediccion, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\02_predicciones_macro\\prediccion_renta.xls", append=TRUE)
+  write.table(cabeceras[i], file = "..\\03_Ouput\\02_predicciones_macro\\prediccion_renta.xls", append=TRUE)
+  write.table(prediccion, file = "..\\03_Ouput\\02_predicciones_macro\\prediccion_renta.xls", append=TRUE)
 }
 
 
@@ -45,7 +45,7 @@ for (i in 3:length(cabeceras)){
 
 #cargamos la serie temporal extraida del Ayuntamiento de Madrid
 
-compraventas <- read_xlsx("C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\01_data\\Serie_temporal_Compraventas_Distritos_Ayto.xlsx")
+compraventas <- read_xlsx("..\\01_data\\Serie_temporal_Compraventas_Distritos_Ayto.xlsx")
 
 compraventas_tib <- as_tibble(compraventas)
 
@@ -70,8 +70,8 @@ for (i in 3:length(cabeceras)){
   prediccion = forecast(fitARIMA, h=5)
   #print(prediccion)
   #plot(forecast(fitARIMA, h=5), incluide=150)
-  write.table(cabeceras[i], file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\02_predicciones_macro\\prediccion_compraventas.xls", append=TRUE)
-  write.table(prediccion, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\02_predicciones_macro\\prediccion_compraventas.xls", append=TRUE)
+  write.table(cabeceras[i], file = "..\\03_Ouput\\02_predicciones_macro\\prediccion_compraventas.xls", append=TRUE)
+  write.table(prediccion, file = "..\\03_Ouput\\02_predicciones_macro\\prediccion_compraventas.xls", append=TRUE)
 }
 
 
@@ -79,7 +79,7 @@ for (i in 3:length(cabeceras)){
 
 #cargamos la serie temporal extraida del Ayuntamiento de Madrid
 
-inmuebles <- read_xlsx("C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\01_data\\Serie_temporal_Inmuebles_Distritos_Ayto.xlsx")
+inmuebles <- read_xlsx("..\\01_data\\Serie_temporal_Inmuebles_Distritos_Ayto.xlsx")
 
 inmuebles_tib <- as_tibble(inmuebles)
 
@@ -105,8 +105,8 @@ for (i in 3:length(cabeceras)){
   prediccion = forecast(fitARIMA, h=5)
   #print(prediccion)
   #plot(forecast(fitARIMA, h=5), incluide=150)
-  write.table(cabeceras[i], file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\02_predicciones_macro\\prediccion_inmuebles.xls", append=TRUE)
-  write.table(prediccion, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\02_predicciones_macro\\prediccion_inmuebles.xls", append=TRUE)
+  write.table(cabeceras[i], file = "..\\03_Ouput\\02_predicciones_macro\\prediccion_inmuebles.xls", append=TRUE)
+  write.table(prediccion, file = "..\\03_Ouput\\02_predicciones_macro\\prediccion_inmuebles.xls", append=TRUE)
 }
 
 
@@ -115,7 +115,7 @@ for (i in 3:length(cabeceras)){
 
 #cargamos la serie temporal extraida del Ayuntamiento de Madrid
 
-parados <- read_xlsx("C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\01_data\\Serie_temporal_Parados_Distritos_Ayto.xlsx")
+parados <- read_xlsx("..\\01_data\\Serie_temporal_Parados_Distritos_Ayto.xlsx")
 
 parados_tib <- as_tibble(parados)
 
@@ -141,7 +141,7 @@ for (i in 3:length(cabeceras)){
   prediccion = forecast(fitARIMA, h=5)
   #print(prediccion)
   #plot(forecast(fitARIMA, h=5), incluide=150)
-  write.table(cabeceras[i], file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\02_predicciones_macro\\prediccion_parados.xls", append=TRUE)
-  write.table(prediccion, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\02_predicciones_macro\\prediccion_parados.xls", append=TRUE)
+  write.table(cabeceras[i], file = "..\\03_Ouput\\02_predicciones_macro\\prediccion_parados.xls", append=TRUE)
+  write.table(prediccion, file = "..\\03_Ouput\\02_predicciones_macro\\prediccion_parados.xls", append=TRUE)
 }
 

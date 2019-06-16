@@ -9,7 +9,7 @@ library(xlsx)
 
 
 
-historico_madrid <- read_xlsx("..\\01_data\\Historico_Madrid_anonimizado.xlsx")
+historico_madrid <- read_xlsx("..\\00_Data\\Historico_Madrid_anonimizado.xlsx")
 
 #para ver la dimensión del dataframe
 dim(historico_madrid)
@@ -143,6 +143,6 @@ sum(is.na(hist_mad_limpio$construction_year))
 
 table(hist_mad_limpio$construction_year)
 
-write.csv(hist_mad_limpio, file = "..\\03_Ouput\\historico_madrid_limpio.csv")
+write.csv(hist_mad_limpio, file = "..\\02_Ouput\\historico_madrid_limpio.csv")
 
 

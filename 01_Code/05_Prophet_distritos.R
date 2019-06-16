@@ -13,7 +13,7 @@ library(ggplot2)
 
 
 
-distritos_original <- read_csv("..\03_Ouput\\historico_madrid_limpio.csv")
+distritos_original <- read_csv("..\\03_Ouput\\historico_madrid_limpio.csv")
 
 #con el excel conjunto que se generará a partir de este código y con los datos reales del 2018
 #visualizaremos en tableau la evolución de los precios por distritos
@@ -25,7 +25,7 @@ distritos_2018 <- distritos_original %>%
   group_by(year_distrito) %>% 
   summarise(mean(price_m2))
 
-write.table(distritos_2018, file = "..\precios_distritos_18.csv", sep=",", append=TRUE)
+write.table(distritos_2018, file = "..\\03_Ouput\\precios_distritos_18.csv", sep=",", append=TRUE)
 
 
 ##################DISTRITO 01##########################################

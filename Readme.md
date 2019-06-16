@@ -189,7 +189,7 @@ Como vemos, todos aumentan en un grado medio en la mayor parte de los distritos 
 
 Sólo ve su precio disminuido el distrito de Barajas.
 
-Podríamos pensar que la predicción es errónea, y en cierto modo lo es, en los distritos donde incrementa tanto. Pero, aunque no explica un crecimiento tan exponencial, y la realidad del mercado no es tal, es cierto que sí refleja lo que está sucediendo actualmente.
+Podríamos pensar que la predicción es errónea, y en cierto modo lo es, en los distritos donde incrementa tanto. Pero, aunque no explica un crecimiento tan exponencial y la realidad del mercado no es tal, es cierto que sí refleja lo que está sucediendo actualmente.
 
 El mercado se encuentra saturado en los distritos más céntricos y más caros tradicionalmente. Esta está provocando un fenómeno de deslocalización hacia distritos e incluso municipios colindantes, provocando un aumento exponencial en los precios de vivienda en estas localizaciones.
 
@@ -199,9 +199,9 @@ Si hacemos el mismo análisis entre 2020-2019
 
 En este caso ninguno decrece, todos tienen variación positiva y vuelven a repetir en el ranking Villaverde, Puente de Vallecas, Carabanchel y Vicálvaro.
 
-En este caso la predicción parece ser errónea (o eso espero). Un crecimiento de más del 15% de un año para otro no es lo habitual. Si es que estas predicciones se cumplen, todo parece indicar que los precios van a continuar en ascenso pero, previsiblemente, se tendrán que poner en marcha mecanismos de control que consigan regular el mercado o quizá volvamos a sufrir un brusco descenso de los precios que lo equilibren.
+En este caso la predicción parece ser errónea (o eso espero). Un crecimiento de más del 15% de un año para otro no es lo habitual. Si es que la tendencia de estas predicciones se cumplen, todo parece indicar que los precios van a continuar en ascenso pero, previsiblemente, se tendrán que poner en marcha mecanismos de control que consigan regular el mercado o quizá volvamos a sufrir un brusco descenso de los precios que lo equilibren.
 
-No obstante, es cierto que de nuevo como hemos indicado los distritos donde más crecen son los que tienen los precios más bajos y tienen mayor recorrido así que quizá aunque no exacta no sea tan descabellada esa predicción.
+No obstante, es cierto que de nuevo, como hemos indicado, los distritos donde hay mayor variación tienen los precios más bajos y tienen, por tanto, mayor recorrido. Quizá, aunque no exacta, no sea tan descabellada esa predicción.
 
 
 ![]( https://github.com/vegalira/TFM_DataScience/blob/master/images/distritos_2018.png)
@@ -209,27 +209,27 @@ No obstante, es cierto que de nuevo como hemos indicado los distritos donde más
 
 ## ¿Estamos cerca de precios de burbuja inmobiliaria?
 
-Inicalmente las predicciones me parecía demasiado optimistas. Como hemos visto antes todos los distritos menos uno en 2019 crecen en precios.
+Inicalmente las predicciones me parecían demasiado optimistas. Como hemos visto antes, todos los distritos, menos uno en 2019, crecen en precios.
 
-Mi impresión inicial, por mi conocimiento del mercado y porque la percepción generalizada es que los precios están demasiado elevados, era que lo óptimo es que las predicciones indicaran un ajuste en los precios. 
+Mi impresión inicial, por mi conocimiento del mercado y porque la percepción generalizada es que los precios están demasiado elevados, era que lo óptimo es que las predicciones indicaran un ajuste a la baja en los precios, en las zonas más saturadas. 
 
-Por ello, decidí analizar como se encuentran los precios en comparación con el precio máximo (normalmente 2007-2008) de la serie histórica de precios de vivienda.
+Por ello, decidí analizar como se encuentran los precios en comparación con el precio máximo (normalmente 2006-2008) de la serie histórica de precios de vivienda.
 
 
-En esta imagen podemos ver que la mayor parte de los distritos se encuentra por debajo de los valores máximos alcanzados. Gran parte de ellos muy alejados aún de los precios de 2007-2008 (-24/-35%). 
+En esta imagen podemos ver que la mayor parte de los distritos se encuentra por debajo de los valores máximos alcanzados. Gran parte de ellos muy alejados aún de los precios de 2006-2008 (-24/-35%). 
 
-Precisamente los distritos más populares y céntricos están por debajo pero a niveles cercanos y, muy destacable y evidente por otro lado en los distritos de Chamberí y Salamanca que ya sobrepasan los máximos históricos.
+Precisamente los distritos más populares y céntricos están por debajo pero a niveles cercanos y, muy destacable y evidente por otro lado, en los distritos de Chamberí y Salamanca que ya sobrepasan los máximos históricos.
 
 
 ![]( https://github.com/vegalira/TFM_DataScience/blob/master/images/2019-Max%20.png)
 
 
-Si vemos como evolucionaría en 2020 los distritos que estaban próximos a los niveles máximos, ya los superan. Es el caso de Moncloa y Centro. Se mantienen Chamberí y Salamanca y, en general, hay una tendencia alcista como habíamos mencionado.
+Si vemos como evolucionarían en 2020, los distritos que estaban próximos a los niveles máximos, ya los superan. Es el caso de Moncloa y Centro. Se mantienen Chamberí y Salamanca y, en general, hay una tendencia alcista como habíamos mencionado.
 
 ![]( https://github.com/vegalira/TFM_DataScience/blob/master/images/2020-Max.png)
 
 
-Esos distritos que tenían unos crecimientos exponenciales en las predicciones de 2019 y 2020 son los que se encuentran aun muy alejados de valores de 2007-2008.
+Esos distritos que tenían unos crecimientos exponenciales en las predicciones de 2019 y 2020 son los que se encuentran aun muy alejados de valores de 2006-2008.
 
 ![]( https://github.com/vegalira/TFM_DataScience/blob/master/images/Dashboard%201.png)
 
@@ -238,9 +238,9 @@ Esos distritos que tenían unos crecimientos exponenciales en las predicciones d
   
  Las predicciones, aunque no exactas por supuesto, reflejan el comportamiento actual del mercado inmobiliario.
  
-Tanto la situación actual como las predicciones objeto de este estudio nos indican que de forma general no estamos en niveles de 2007-2008. No obstante, tal y como refleja este análisis, en determinados distritos de sí saltan las alarmas. Hablamos de los distritos más céntricos y más demandados.
+Tanto la situación actual como las predicciones objeto de este estudio nos indican que de forma general no estamos en niveles de 2006-2008. No obstante, tal y como refleja este análisis, en determinados distritos, sí saltan las alarmas. Hablamos de los distritos más céntricos y más demandados.
  
-Tal y como hemos observado el aumento de los precios se desplaza hacia distritos menos céntricos y menos populares que pueden absorber la demanda creciente tanto en volumen como en precios.
+Tal y como hemos observado, el aumento de los precios se desplaza hacia distritos menos céntricos y menos populares que pueden absorber la demanda creciente, tanto en volumen como en precios.
 
 Tendremos que esperar para ver cómo se comporta el mercado finalmente y si se adoptan medidas para impedir este signo alcista de precios que, al margen de otras consideraciones, ya está a niveles preocupantes en cuanto a esfuerzo teórico de las familias.
  

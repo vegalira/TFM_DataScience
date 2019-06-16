@@ -13,7 +13,7 @@ library(ggplot2)
 
 
 
-distritos_original <- read_csv("C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\historico_madrid_limpio.csv")
+distritos_original <- read_csv("..\03_Ouput\\historico_madrid_limpio.csv")
 
 #con el excel conjunto que se generará a partir de este código y con los datos reales del 2018
 #visualizaremos en tableau la evolución de los precios por distritos
@@ -25,7 +25,7 @@ distritos_2018 <- distritos_original %>%
   group_by(year_distrito) %>% 
   summarise(mean(price_m2))
 
-write.table(distritos_2018, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\precios_distritos_18.csv", sep=",", append=TRUE)
+write.table(distritos_2018, file = "..\precios_distritos_18.csv", sep=",", append=TRUE)
 
 
 ##################DISTRITO 01##########################################
@@ -89,7 +89,7 @@ distrito_01_forecast <- forecast_df_01 %>%
   mutate(distrito= "01")
 
 
-write.table(distrito_01_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_01_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 
 ############## DISTRITO 02  ################################################
@@ -152,7 +152,7 @@ distrito_02_forecast <- forecast_df_02 %>%
   mutate(distrito= "02")
 
 
-write.table(distrito_02_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_02_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 03  ################################################
 
@@ -214,7 +214,7 @@ distrito_03_forecast <- forecast_df_03 %>%
   mutate(distrito= "03")
 
 
-write.table(distrito_03_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_03_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 04  ################################################
 
@@ -276,7 +276,7 @@ distrito_04_forecast <- forecast_df_04 %>%
   mutate(distrito= "04")
 
 
-write.table(distrito_04_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_04_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 05  ################################################
 
@@ -338,7 +338,7 @@ distrito_05_forecast <- forecast_df_05 %>%
   mutate(distrito= "05")
 
 
-write.table(distrito_05_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_05_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 06  ################################################
 
@@ -400,7 +400,7 @@ distrito_06_forecast <- forecast_df_06 %>%
   mutate(distrito= "06")
 
 
-write.table(distrito_06_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_06_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 
 ############## DISTRITO 07  ################################################
@@ -463,7 +463,7 @@ distrito_07_forecast <- forecast_df_07 %>%
   mutate(distrito= "07")
 
 
-write.table(distrito_07_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_07_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 
 ############## DISTRITO 08  ################################################
@@ -526,7 +526,7 @@ distrito_08_forecast <- forecast_df_08 %>%
   mutate(distrito= "08")
 
 
-write.table(distrito_08_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_08_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 
 ############## DISTRITO 09  ################################################
@@ -589,7 +589,7 @@ distrito_09_forecast <- forecast_df_09 %>%
   mutate(distrito= "09")
 
 
-write.table(distrito_09_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_09_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 10  ################################################
 
@@ -651,7 +651,7 @@ distrito_10_forecast <- forecast_df_10 %>%
   mutate(distrito= "10")
 
 
-write.table(distrito_10_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_10_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 11  ################################################
 
@@ -713,7 +713,7 @@ distrito_11_forecast <- forecast_df_11 %>%
   mutate(distrito= "11")
 
 
-write.table(distrito_11_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_11_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 12  ################################################
 
@@ -775,7 +775,7 @@ distrito_12_forecast <- forecast_df_12 %>%
   mutate(distrito= "12")
 
 
-write.table(distrito_12_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_12_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 
 ############## DISTRITO 13  ################################################
@@ -838,7 +838,7 @@ distrito_13_forecast <- forecast_df_13 %>%
   mutate(distrito= "13")
 
 
-write.table(distrito_13_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_13_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 14  ################################################
 
@@ -900,7 +900,7 @@ distrito_14_forecast <- forecast_df_14 %>%
   mutate(distrito= "14")
 
 
-write.table(distrito_14_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_14_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 15  ################################################
 
@@ -962,7 +962,7 @@ distrito_15_forecast <- forecast_df_15 %>%
   mutate(distrito= "15")
 
 
-write.table(distrito_15_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_15_forecast, file = "..\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 16  ################################################
 
@@ -1024,7 +1024,7 @@ distrito_16_forecast <- forecast_df_16 %>%
   mutate(distrito= "16")
 
 
-write.table(distrito_16_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_16_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 17  ################################################
 
@@ -1086,7 +1086,7 @@ distrito_17_forecast <- forecast_df_17 %>%
   mutate(distrito= "17")
 
 
-write.table(distrito_17_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_17_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 
 ############## DISTRITO 18  ################################################
@@ -1149,7 +1149,7 @@ distrito_18_forecast <- forecast_df_18 %>%
   mutate(distrito= "18")
 
 
-write.table(distrito_18_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_18_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 19  ################################################
 
@@ -1211,7 +1211,7 @@ distrito_19_forecast <- forecast_df_19 %>%
   mutate(distrito= "19")
 
 
-write.table(distrito_19_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_19_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 20  ################################################
 
@@ -1273,7 +1273,7 @@ distrito_20_forecast <- forecast_df_20 %>%
   mutate(distrito= "20")
 
 
-write.table(distrito_20_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_20_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
 ############## DISTRITO 21  ################################################
 
@@ -1335,5 +1335,5 @@ distrito_21_forecast <- forecast_df_21 %>%
   mutate(distrito= "21")
 
 
-write.table(distrito_21_forecast, file = "C:\\Users\\Lor\\Desktop\\Master\\TFM\\00_Codigo_ok\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
+write.table(distrito_21_forecast, file = "..\\03_Ouput\\prediccion_prophet_distritos.csv", sep=",", append=TRUE)
 
